@@ -1,5 +1,6 @@
 #Seta {
-    background: #000;
+    background: var(--bs-seta);
     padding: 0.5rem 1rem 0.5rem 1rem  !important;
     border-radius: 8px 50px 50px 8px;
+    width: 27%;
 }
