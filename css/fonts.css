@@ -1,0 +1,52 @@
+@font-face {
+	font-family: "OpenSans-Light";
+	src: url('../fonts/OpenSans-Light.ttf');
+}
+@font-face {
+	font-family: "OpenSans-Regular";
+	src: url('../fonts/OpenSans-Regular.ttf');
+}
+@font-face {
+	font-family: "OpenSans-Italic";
+	src: url('../fonts/OpenSans-Italic.ttf');
+}
+@font-face {
+	font-family: "OpenSans-BoldItalic";
+	src: url('../fonts/OpenSans-BoldItalic.ttf');
+}
+@font-face {
+	font-family: "OpenSans-SemiBold";
+	src: url('../fonts/OpenSans-SemiBold.ttf');
+}
+@font-face {
+	font-family: "PlayfairDisplay-Black";
+	src: url('../fonts/PlayfairDisplay-Black.ttf');
+}
+@font-face {
+	font-family: "PlayfairDisplay-BlackItalic";
+	src: url('../fonts/PlayfairDisplay-BlackItalic.ttf');
+}
+@font-face {
+	font-family: "PlayfairDisplay-Bold";
+	src: url('../fonts/PlayfairDisplay-Bold.ttf');
+}
+@font-face {
+	font-family: "PlayfairDisplay-BoldItalic";
+	src: url('../fonts/PlayfairDisplay-BoldItalic.ttf');
+}
+@font-face {
+	font-family: "PlayfairDisplay-BoldItalic";
+	src: url('../fonts/PlayfairDisplay-BoldItalic.ttf');
+}
+@font-face {
+	font-family: "PlayfairDisplay-Italic";
+	src: url('../fonts/PlayfairDisplay-Italic.ttf');
+}
+@font-face {
+	font-family: "PlayfairDisplay-Regular";
+	src: url('../fonts/PlayfairDisplay-Regular.ttf');
+}
+@font-face {
+	font-family: "OpenSans-Bold";
+	src: url('../fonts/OpenSans-Bold.ttf');
+}
