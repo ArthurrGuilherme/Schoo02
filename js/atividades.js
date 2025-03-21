@@ -40,3 +40,24 @@ function verificarResposta1() {
         swal("Atenção!", "Selecione uma opção primeiro!", "warning");
     }
 }
+/*Questão 03 */
+document.querySelectorAll(".checkResposta2").forEach(check => {
+    check.addEventListener("change", function() {
+        document.querySelectorAll(".checkResposta2").forEach(chk => chk !== this && (chk.checked = false));
+        document.getElementById("botaoResposta2").style.display = "block";
+    });
+});
+
+function verificarResposta2() {
+    let selecionado = document.querySelector(".checkResposta2:checked");
+    if (selecionado) {
+        let correto = selecionado.getAttribute("data-correto") === "true";
+        if (correto) {
+            swal("Parabéns!", "Você escolheu a resposta certa!", "success");
+        } else {
+            swal("Alternativa correta:", " b) Adaptabilidade é ajustar-se rapidamente às mudanças, e resiliência é superar adversidades. A adaptabilidade é a capacidade de ajustar-se rapidamente a mudanças, de abraçar o novo e lidar com o diferente, ao passo que resiliência é a habilidade de vencer adversidades, desafios ou /e superar os seus próprios limites e inseguranças. Em um mundo VUCA, como avanços tecnológicos e com as diferentes crises globais, as habilidades de resiliência e adaptabilidade desempenham um importante papel para superar as inúmeras adversidades, lidar com as pressões do dia a dia do trabalho, adaptar-se a novas ideias, metodologias e tecnologias, e para continuar aprendendo sempre diante das mudanças da sociedade.", "error");
+        }
+    } else {
+        swal("Atenção!", "Selecione uma opção primeiro!", "warning");
+    }
+}
