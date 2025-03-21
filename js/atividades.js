@@ -61,3 +61,24 @@ function verificarResposta2() {
         swal("Atenção!", "Selecione uma opção primeiro!", "warning");
     }
 }
+/*Questão 04 */
+document.querySelectorAll(".checkResposta3").forEach(check => {
+    check.addEventListener("change", function() {
+        document.querySelectorAll(".checkResposta3").forEach(chk => chk !== this && (chk.checked = false));
+        document.getElementById("botaoResposta3").style.display = "block";
+    });
+});
+
+function verificarResposta3() {
+    let selecionado = document.querySelector(".checkResposta3:checked");
+    if (selecionado) {
+        let correto = selecionado.getAttribute("data-correto") === "true";
+        if (correto) {
+            swal("Parabéns!", "Você escolheu a resposta certa!", "success");
+        } else {
+            swal("Alternativa correta:", " a) Buscar aprendizado com erros e construir uma rede de suporte confiável", "error");
+        }
+    } else {
+        swal("Atenção!", "Selecione uma opção primeiro!", "warning");
+    }
+}
