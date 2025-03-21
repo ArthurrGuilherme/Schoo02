@@ -20,3 +20,11 @@
     --color-Secundaria: #003057;
     --color-terciaria: #0687A7;
 }
+/*Carroeis*/
+.carousel-control-next-icon {
+    background-image: url(../img/icons/f4.png) !important;
+}
+.carousel-control-prev-icon {
+    background-image: url(../img/icons/f3.png) !important;
+}
+/*Carroeis*/
