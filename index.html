@@ -11,6 +11,7 @@
         <!--Css Api-->
             <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
             <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+            <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
         <!--Css Api-->
     <!--Css-->
 </head>
@@ -210,7 +211,7 @@
                     <!-- Carrossel -->
                     <span class="w-50 d-flex justify-content-center align-items-center">
                         <div id="carouselExample2" class="carousel slide w-100">
-                            <div class="carousel-inner">
+                            <div class="carousel-inner01">
                                 <!-- Slide 1 -->
                                     <div class="carousel-item active">
                                         <div class="w-100 d-flex justify-content-center flex-column align-items-center">
@@ -368,10 +369,127 @@
                     </span>
                 </article>
             </section>
-        <!-- Segundo Carrossel-->    
+        <!-- Segundo Carrossel-->   
+        <!--Terceiro Carrosel-->
+            <section style="background: var(--bs-terciaria);" class="container-xxl">
+                <article class="d-flex">
+                    <!-- Carrossel -->
+                        <span class="w-50 d-flex justify-content-center align-items-center">
+                            <div id="carouselNovo" class="carousel slide">
+                                <div class="carousel-inner"><div class="carousel-item active">
+                                    <!-- Texto -->
+                                    <div class="w-100 d-flex justify-content-center flex-column align-items-center">
+                                        <div style="max-height: 500px; overflow-y: auto; padding: 10px; width: 78%; color: var(--color-Secundaria); ">
+                                            <!--Titulo-->
+                                                <span style="gap: 1rem;" class="d-flex">
+                                                    <!--icons-->
+                                                        <span style="width: 8% !important;">
+                                                            <img src="./img/icons/ico5.png" style="width: 180%;"   alt="">
+                                                        </span>
+                                                    <!--icons-->
+                                                    <!-- Título -->
+                                                    <br><br><br>
+                                                    <div  class="d-flex justify-content-end align-items-end" >
+                                                        <h4 style="color: var(--color-Secundaria); ">
+                                                            <span style="font-family: OpenSans-SemiBold; font-size: 1.3rem;">Teste de conceitos de resiliência e adaptabilidade</span>
+                                                        </h4>
+                                                    </div>
+                                                    <!--Titulo-->
+                                                </span>    
+                                            <!--Titulo-->
+                                            <!--Instruções-->
+                                            <br>
+                                                <p style="font-family: OpenSans-Light;"><strong style="font-family: OpenSans-bold;">Instruções:</strong> Leia atentamente as perguntas para</p>
+                                                <p style="font-family: OpenSans-Light;">responder sobre os conceitos de resiliência e</p>
+                                                <p style="font-family: OpenSans-Light;">adaptabilidade. Você poderá escolher somente uma</p>
+                                                <p style="font-family: OpenSans-Light;">alternativa; em seguida, clique em “Confirmar”. Ao</p>
+                                                <p style="font-family: OpenSans-Light;">fazer, isso um botão de Feedback aparecerá na tela;</p>
+                                                <p style="font-family: OpenSans-Light;">clique nele para verificar a resposta correta</p>
+                                            <br>
+                                            <!--Instruções-->
+                                            <!-- Legenda -->
+                                            <span>
+                                                <p style="font-family: OpenSans-bold;">1. Ao pensarmos em resiliência e adaptabilidade, </p>     
+                                                    <p style="font-family: OpenSans-bold;">podemos rapidamente relacionar tais competências</p>     
+                                                    <p style="font-family: OpenSans-bold;"> a exemplos práticos de como podem ser observadas</p>     
+                                                    <p style="font-family: OpenSans-bold;"> no mercado de trabalho. Assinale a alternativa</p>     
+                                                    <p style="font-family: OpenSans-bold;"> que traz um exemplo concreto de aplicação destas</p>     
+                                                    <p style="font-family: OpenSans-bold;">competências. </p>   
+                                                <br>
+                                                <span>
+                                                    <label>
+                                                        <input type="checkbox" class="checkResposta" data-correto="false"> Opção 1
+                                                    </label><br>
+                                                    <label>
+                                                        <input type="checkbox" class="checkResposta" data-correto="false"> Opção 2
+                                                    </label><br>
+                                                    <label>
+                                                        <input type="checkbox" class="checkResposta" data-correto="true"> Opção 3 (Correta)
+                                                    </label><br>
+                                                    <label>
+                                                        <input type="checkbox" class="checkResposta" data-correto="false"> Opção 4
+                                                    </label>
+                                                </span>
+                                                <br>
+                                                
+                                                <button id="botaoResposta" style="display: none;" onclick="verificarResposta()">Ver Resposta</button>
+                                            </span>
+                                            <!--Legenda-->
+                                        </div>
+                                    </div>
+                                    <!-- Texto -->
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="img2.jpg" class="d-block w-100" alt="Imagem 2">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="img3.jpg" class="d-block w-100" alt="Imagem 3">
+                                </div>
+                                </div>
+                                <button class="carousel-control-prev" type="button" data-bs-target="#carouselNovo" data-bs-slide="prev">
+                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Anterior</span>
+                                </button>
+                                <button class="carousel-control-next" type="button" data-bs-target="#carouselNovo" data-bs-slide="next">
+                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Próximo</span>
+                                </button>
+                            </div>
+                        </span>
+                    <!-- Carrossel -->
+                    <!-- Img -->
+                        <span class="w-50">
+                            <img class="w-100" src="./img/SecundaImg.Webp" alt="Primeira Img">
+                        </span>
+                    <!-- Img -->
+                </article>
+            </section>
+        <!--Primeiro Carrosel--> 
     </main>
 </body>
     <!--Js-->
+    <script>
+        document.querySelectorAll(".checkResposta").forEach(check => {
+            check.addEventListener("change", function() {
+                document.querySelectorAll(".checkResposta").forEach(chk => chk !== this && (chk.checked = false));
+                document.getElementById("botaoResposta").style.display = "block";
+            });
+        });
+
+        function verificarResposta() {
+            let selecionado = document.querySelector(".checkResposta:checked");
+            if (selecionado) {
+                let correto = selecionado.getAttribute("data-correto") === "true";
+                if (correto) {
+                    swal("Parabéns!", "Você escolheu a resposta certa!", "success");
+                } else {
+                    swal("Ops!", "Essa não é a resposta correta!", "error");
+                }
+            } else {
+                swal("Atenção!", "Selecione uma opção primeiro!", "warning");
+            }
+        }
+    </script>
         <!--Js Api-->
             <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
             <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>

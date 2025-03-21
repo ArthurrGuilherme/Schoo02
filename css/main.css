@@ -2,6 +2,11 @@
     .carousel-inner {
         position: relative;
         overflow: hidden;
+        height: 500px; /* Ajuste conforme necessário */
+    }
+    .carousel-inner01 {
+        position: relative;
+        overflow: hidden;
         height: 400px; /* Ajuste conforme necessário */
     }
     .carousel-item {
@@ -17,3 +22,10 @@
         position: relative;
     }
 /*Carrossel*/
+/*Carrossel 03*/
+    #carouselNovo {
+        max-width: 600px; /* Ajuste conforme necessário */
+        margin: auto;
+    }
+/*Carrossel 03*/
+/*Atividade 01*/
