@@ -418,21 +418,25 @@
                                                 <br>
                                                 <span>
                                                     <label>
-                                                        <input type="checkbox" class="checkResposta" data-correto="false"> Opção 1
-                                                    </label><br>
+                                                        <input type="checkbox" class="checkResposta" data-correto="false"> a) Empresas ignorando demandas do mercado para manter seus modelos tradicionais.
+                                                    </label>
+                                                    <br>
                                                     <label>
-                                                        <input type="checkbox" class="checkResposta" data-correto="false"> Opção 2
-                                                    </label><br>
+                                                        <input type="checkbox" class="checkResposta" data-correto="false"> b) Restaurantes fechando suas portas sem explorar novas alternativas durante a pandemia.
+                                                    </label>
+                                                    <br>
                                                     <label>
-                                                        <input type="checkbox" class="checkResposta" data-correto="true"> Opção 3 (Correta)
-                                                    </label><br>
+                                                        <input type="checkbox" class="checkResposta " data-correto="false"> c) Funcionários que evitam mudanças para manter estabilidade no ambiente de trabalho.
+                                                    </label>
+                                                    <br>
                                                     <label>
-                                                        <input type="checkbox" class="checkResposta" data-correto="false"> Opção 4
+                                                        <input type="checkbox" class="checkResposta" data-correto="true"> d) Empresas de fast food adaptando seus cardápios para incluir opções saudáveis
                                                     </label>
                                                 </span>
-                                                <br>
-                                                
-                                                <button id="botaoResposta" style="display: none;" onclick="verificarResposta()">Ver Resposta</button>
+                                                <br><br>
+                                                <span class="d-flex justify-content-center align-items-center">
+                                                    <button id="botaoResposta" style="display: none;font-family: OpenSans-Light;" onclick="verificarResposta()">Confirmar</button>
+                                                </span>
                                             </span>
                                             <!--Legenda-->
                                         </div>
@@ -446,11 +450,11 @@
                                     <img src="img3.jpg" class="d-block w-100" alt="Imagem 3">
                                 </div>
                                 </div>
-                                <button class="carousel-control-prev" type="button" data-bs-target="#carouselNovo" data-bs-slide="prev">
+                                <button class="carousel-control-prev" id="Idsetas" type="button" data-bs-target="#carouselNovo" data-bs-slide="prev">
                                 <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                                 <span class="visually-hidden">Anterior</span>
                                 </button>
-                                <button class="carousel-control-next" type="button" data-bs-target="#carouselNovo" data-bs-slide="next">
+                                <button class="carousel-control-next" id="Idsetas" type="button" data-bs-target="#carouselNovo" data-bs-slide="next">
                                 <span class="carousel-control-next-icon" aria-hidden="true"></span>
                                 <span class="visually-hidden">Próximo</span>
                                 </button>
@@ -468,28 +472,7 @@
     </main>
 </body>
     <!--Js-->
-    <script>
-        document.querySelectorAll(".checkResposta").forEach(check => {
-            check.addEventListener("change", function() {
-                document.querySelectorAll(".checkResposta").forEach(chk => chk !== this && (chk.checked = false));
-                document.getElementById("botaoResposta").style.display = "block";
-            });
-        });
-
-        function verificarResposta() {
-            let selecionado = document.querySelector(".checkResposta:checked");
-            if (selecionado) {
-                let correto = selecionado.getAttribute("data-correto") === "true";
-                if (correto) {
-                    swal("Parabéns!", "Você escolheu a resposta certa!", "success");
-                } else {
-                    swal("Ops!", "Essa não é a resposta correta!", "error");
-                }
-            } else {
-                swal("Atenção!", "Selecione uma opção primeiro!", "warning");
-            }
-        }
-    </script>
+    <script src="./js/atividades.js"></script>
         <!--Js Api-->
             <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
             <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
