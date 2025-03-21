@@ -43,3 +43,29 @@
         color: var(--bs-white);
     }
 /*Atividade 01*/
+/*Atividade 02*/
+.draggable {
+    width: 50%;
+    text-align: center;
+    cursor: grab;
+    border-radius: 5px;
+}
+
+.container {
+    width: 50%;
+    height: 50px;
+    border: 2px dashed #333;
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    color: #333;
+    position: relative;  /* Faz o container ser um ponto de referência para o posicionamento do item */
+}
+
+.highlight-drop {
+    border: 2px solid green;
+    background: #fff;
+}
+/*Atividade 02*/

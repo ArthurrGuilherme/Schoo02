@@ -12,6 +12,7 @@
             <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
             <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
             <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+            <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sweetalert2@11.4.19/dist/sweetalert2.min.css">
         <!--Css Api-->
     <!--Css-->
 </head>
@@ -690,12 +691,63 @@
                 </article>
             </section>
         <!--Container 02-->
+        <!--Atividade 02-->
+            <section style="background: var(--Bs-Secundario);" class="container-xxl p-3">
+                <article class="d-flex justify-content-center align-items-center">
+                    <div class="d-flex flex-column justify-content-evenly align-items-center">
+                        <!--Titulo-->
+                            <span style="font-family: OpenSans-Light; font-size: 1.5rem; text-align: center;">
+                                <h4>Vamos fazer um exercício para testar sua compreensão sobre resiliência e adaptabilidade.</h4>
+                                <p style="font-size: 1.2rem;"><strong style="font-family: OpenSans-bold;">Instruções:</strong> Relacione a alternativa correta da direita com o que se pergunta no enunciado na esquerda. Arraste a</p>
+                                <p style="font-size: 1.2rem;">alternativa no espaço indicado “Insira aqui sua resposta”. Em seguida, clique no botão “Feedback” para verificar a </p>
+                                <p style="font-size: 1.2rem;">alternativa correta e uma breve explicação.</p>
+                            </span>
+                        <!--Titulo-->
+                        <br>
+                        <!--Carrossel Atividade-->   
+                        <div style="font-family: OpenSans-bold; font-size: 1rem !important;">
+                                <p>1) Como a falta de resiliência pode impactar um profissional ao enfrentar dificuldades do ambiente de trabalho, como os desafios</p>
+                                <p>iniciais em uma nova posição ou uma nova demanda?</p>
+                        </div>
+                            <br>
+                        <div class="w-100">
+                            <div>
+                                <!--Questão-->
+                                    <div class="d-flex align-items-center">
+                                        <span style="font-family: OpenSans-Light;" class="w-50 d-flex justify-content-center align-items-center flex-column">
+                                            <div id="drag1" class="draggable" draggable="true">a) Não causa impacto, pois dificuldades do trabalho são comuns.</div>
+                                            <br>
+                                            <div id="drag2" class="draggable" draggable="true">b) Pode causar dificuldades na comunicação com demais colaboradores.</div>
+                                            <br>
+                                            <div id="drag3" class="draggable" draggable="true">c) Garante que o profissional encontre novas estratégias rapidamente</div>
+                                            <br>
+                                            <div id="drag4" class="draggable" draggable="true">d)   Pode fazer com que o profissional tenha dificuldades em superar alguns desafios e impedir o aprendizado com seus próprios erros</div>
+                                        </span>
+                                        <span class="w-50 d-flex justify-content-center align-items-center flex-column">
+                                            <img class="w-50" src="./img/atividade01.webp" alt="">
+                                            <br>
+                                            <p>Solte aqui</p>
+                                            <br>
+                                            <div class="container" id="dropzone"></div>
+                                            <br>
+                                        </span>
+                                    </div>
+                                <!--Questão-->    
+                            </div>
+                        </div>
+                        <!--Carrossel Atividade-->
+                    </div>
+                </article>
+            </section>
+        <!--Atividade 02-->
     </main>
 </body>
     <!--Js-->
-    <script src="./js/atividades.js"></script>
+        <script src="./js/atividades.js"></script>
+        <script src="./js/atividade2.js"></script>
         <!--Js Api-->
             <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
             <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+            <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.4.19/dist/sweetalert2.all.min.js"></script>
         <!--js api-->
 </html>        
