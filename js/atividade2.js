@@ -45,8 +45,8 @@ const draggables = document.querySelectorAll('.draggable');
                 } else if (itemId === 'drag2') {
                     // Resposta errada
                     Swal.fire({
-                        title: 'Resposta Errada!<br><br>',
-                        html: 'Este não é o item correto.<br><br>',
+                        title: 'Resposta correta:<br><br>',
+                        html: 'd ) Pode fazer com que o profissional tenha dificuldades em superar alguns desafios e impedir o aprendizado com seus próprios erros. <br><br> É importante entender que dificuldades são naturais e fazem parte do processo de crescimento e desenvolvimento. Elas sempre ocorrerão independentemente do quão experiente somos e tendem a se tornar mais complexas conforme avançamos a posições de maior responsabilidade em nossa jornada profissional. <br><br>',
                         icon: 'error',
                     }).then(() => {
                         // Recarregar a página após o feedback de resposta errada
@@ -55,8 +55,8 @@ const draggables = document.querySelectorAll('.draggable');
                 }else if (itemId === 'drag3') {
                     // Resposta errada
                     Swal.fire({
-                        title: 'Resposta Errada!<br><br>',
-                        html: 'Este não é o item correto.<br><br>',
+                        title: 'Resposta correta:<br><br>',
+                        html: 'd ) Pode fazer com que o profissional tenha dificuldades em superar alguns desafios e impedir o aprendizado com seus próprios erros. <br><br>  É importante entender que dificuldades são naturais e fazem parte do processo de crescimento e desenvolvimento. Elas sempre ocorrerão independentemente do quão experiente somos e tendem a se tornar mais complexas conforme avançamos a posições de maior responsabilidade em nossa jornada profissional. <br><br>',
                         icon: 'error',
                     }).then(() => {
                         // Recarregar a página após o feedback de resposta errada
@@ -65,8 +65,8 @@ const draggables = document.querySelectorAll('.draggable');
                 }else if (itemId === 'drag1') {
                     // Resposta errada
                     Swal.fire({
-                        title: 'Resposta Errada!<br><br>',
-                        html: 'Este não é o item correto.<br><br>',
+                        title: 'Resposta correta:<br><br>',
+                        html: 'd ) Pode fazer com que o profissional tenha dificuldades em superar alguns desafios e impedir o aprendizado com seus próprios erros. <br><br> É importante entender que dificuldades são naturais e fazem parte do processo de crescimento e desenvolvimento. Elas sempre ocorrerão independentemente do quão experiente somos e tendem a se tornar mais complexas conforme avançamos a posições de maior responsabilidade em nossa jornada profissional. <br><br>',
                         icon: 'error',
                     }).then(() => {
                         // Recarregar a página após o feedback de resposta errada
@@ -129,8 +129,8 @@ const draggables2 = document.querySelectorAll('.draggable02');
             });
         } else {
             Swal.fire({
-                title: 'Resposta Errada!<br><br>',
-                html: 'Esse não é o item correto.<br><br>',
+                title: 'Resposta correta:<br><br>',
+                html: 'a ) Pode fazer com que o profissional tenha dificuldades em superar alguns desafios e impedir o aprendizado com seus próprios erros. <br><br> É importante entender que dificuldades são naturais e fazem parte do processo de crescimento e desenvolvimento. Elas sempre ocorrerão independentemente do quão experiente somos e tendem a se tornar mais complexas conforme avançamos a posições de maior responsabilidade em nossa jornada profissional. <br><br>',
                 icon: 'error',
                 confirmButtonText: 'Tentar novamente'
             }).then(() => {
@@ -186,8 +186,8 @@ dropzone3.addEventListener('drop', (e) => {
         });
     } else {
         Swal.fire({
-            title: 'Resposta Errada!<br><br>',
-            html: 'Esse não é o item correto.<br><br>',
+            title: 'Resposta correta: <br><br>',
+            html: 'Recusar ou ser resistente ao emprego de novas ferramentas, métodos ou tecnologias que agregam valor à atividade realizada.<br><br> Recusar-se a utilizar novas ferramentas ou métodos reflete resistência à mudança, o que pode prejudicar a capacidade de inovar e acompanhar o mercado. Nesse sentido, estar aberto ao aprendizado é essencial para se manter relevante.<br><br>',
             icon: 'error',
             confirmButtonText: 'Tentar novamente'
         }).then(() => {
