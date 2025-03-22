@@ -51,14 +51,14 @@
     }
 /*Atividade 01*/
 /*Atividade 02*/
-.draggable {
+.draggable, .draggable02{
     width: 50%;
     text-align: center;
     cursor: grab;
     border-radius: 5px;
 }
 
-.container {
+.container, .container02{
     width: 50%;
     height: 50px;
     border: 2px dashed #333;
@@ -71,7 +71,7 @@
     position: relative;  /* Faz o container ser um ponto de referência para o posicionamento do item */
 }
 
-.highlight-drop {
+.highlight-drop, .highlight-drop2{
     border: 2px solid green;
     background: #fff;
 }

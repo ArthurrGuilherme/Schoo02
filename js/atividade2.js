@@ -1,3 +1,4 @@
+/*Questão01*/
 const draggables = document.querySelectorAll('.draggable');
             const dropzone = document.getElementById('dropzone');
             let hasDropped = false;  // Flag to check if an item has been dropped
@@ -80,3 +81,61 @@ const draggables = document.querySelectorAll('.draggable');
                     });
                 }
             });
+/*Questão01*/
+/*Questão02*/
+const draggables2 = document.querySelectorAll('.draggable02');
+    const dropzone2 = document.getElementById('dropzone2');
+    let hasDropped2 = false;
+
+    draggables2.forEach(draggable => {
+        draggable.addEventListener('dragstart', (e) => {
+            if (hasDropped2) {
+                e.preventDefault();
+                return;
+            }
+            e.dataTransfer.setData('text', e.target.id);
+            dropzone2.classList.add('highlight-drop2');
+        });
+    });
+
+    dropzone2.addEventListener('dragover', (e) => {
+        e.preventDefault();
+    });
+
+    dropzone2.addEventListener('dragleave', () => {
+        dropzone2.classList.remove('highlight-drop2');
+    });
+
+    dropzone2.addEventListener('drop', (e) => {
+        if (hasDropped2) return;
+
+        e.preventDefault();
+        dropzone2.classList.remove('highlight-drop2');
+
+        const itemId2 = e.dataTransfer.getData('text');
+        const draggedItem2 = document.getElementById(itemId2);
+
+        // Adiciona o item no dropzone (removendo os anteriores)
+        dropzone2.innerHTML = "";
+        dropzone2.appendChild(draggedItem2);
+        hasDropped2 = true;
+
+        if (itemId2 === 'dragItem1') {
+            Swal.fire({
+                title: 'Resposta Certa!<br><br>',
+                html: 'Você escolheu a opção correta.<br><br>',
+                icon: 'success',
+                confirmButtonText: 'OK'
+            });
+        } else {
+            Swal.fire({
+                title: 'Resposta Errada!<br><br>',
+                html: 'Esse não é o item correto.<br><br>',
+                icon: 'error',
+                confirmButtonText: 'Tentar novamente'
+            }).then(() => {
+                location.reload();
+            });
+        }
+    });
+/*Questão02*/            
