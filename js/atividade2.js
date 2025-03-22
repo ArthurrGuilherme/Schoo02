@@ -138,4 +138,61 @@ const draggables2 = document.querySelectorAll('.draggable02');
             });
         }
     });
-/*Questão02*/            
+/*Questão02*/    
+/*Questão03*/ 
+const draggables3 = document.querySelectorAll('.draggable03');
+const dropzone3 = document.getElementById('dropzone3');
+let hasDropped3 = false;
+
+draggables3.forEach(draggable => {
+    draggable.addEventListener('dragstart', (e) => {
+        if (hasDropped3) {
+            e.preventDefault();
+            return;
+        }
+        e.dataTransfer.setData('text', e.target.id);
+        dropzone3.classList.add('highlight-drop3');
+    });
+});
+
+dropzone3.addEventListener('dragover', (e) => {
+    e.preventDefault();
+});
+
+dropzone3.addEventListener('dragleave', () => {
+    dropzone3.classList.remove('highlight-drop3');
+});
+
+dropzone3.addEventListener('drop', (e) => {
+    if (hasDropped3) return;
+
+    e.preventDefault();
+    dropzone3.classList.remove('highlight-drop3');
+
+    const itemId3 = e.dataTransfer.getData('text');
+    const draggedItem3 = document.getElementById(itemId3);
+
+    // Adiciona o item no dropzone (removendo os anteriores)
+    dropzone3.innerHTML = "";
+    dropzone3.appendChild(draggedItem3);
+    hasDropped3 = true;
+
+    if (itemId3 === 'dragItemC') {
+        Swal.fire({
+            title: 'Resposta Certa!<br><br>',
+            html: 'Você escolheu a opção correta.<br><br>',
+            icon: 'success',
+            confirmButtonText: 'OK'
+        });
+    } else {
+        Swal.fire({
+            title: 'Resposta Errada!<br><br>',
+            html: 'Esse não é o item correto.<br><br>',
+            icon: 'error',
+            confirmButtonText: 'Tentar novamente'
+        }).then(() => {
+            location.reload();
+        });
+    }
+});
+/*Questão03*/      
