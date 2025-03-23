@@ -23,7 +23,7 @@
     }
 /*Carrossel*/
 /*Carrossel 03*/
-    #carouselNovo {
+    #carouselNovo  {
         max-width: 600px; /* Ajuste conforme necessário */
         margin: auto;
     }
@@ -42,7 +42,7 @@
     label {
         font-family: OpenSans-Light; 
     }
-    #botaoResposta, #botaoResposta1, #botaoResposta2, #botaoResposta3 {
+    #botaoResposta, #botaoResposta1, #botaoResposta2, #botaoResposta3, #botaoResposta10 {
         width: 50%;
         padding: .3rem 0rem !important;
         border-radius: 15px;
@@ -76,3 +76,22 @@
     background: #fff;
 }
 /*Atividade 02*/
+/*Carrossel 05*/
+#carouselExtra {
+    max-width: 800px; /* Ajuste conforme necessário */
+    margin: auto;
+    border-radius: 10px;
+    overflow: hidden;
+  }
+
+  #carouselExtra .carousel-item img {
+    height: 60px;
+    object-fit: cover;
+  }
+
+  #carouselExtra .carousel-caption {
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 10px;
+    border-radius: 5px;
+  }
+/*Carrossel 05*/

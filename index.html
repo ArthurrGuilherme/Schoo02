@@ -960,21 +960,113 @@
                 </article>
             </section>
         <!--Container 03-->
-        <!--Terceiro Carrosel Atividade-->
+        <!--Quarta Carrosel Atividade03-->
             <section style="background: var(--bs-terciaria);" class="container-xxl">
                 <article class="d-flex">
                     <!-- Carrossel -->
-                        <span class="w-50 d-flex justify-content-center align-items-center">
-                        </span>
-                    <!-- Carrossel -->
-                    <!-- Img -->
-                        <span class="w-50">
-                            <img class="w-100" src="./img/QuartaImg.webp" alt="Primeira Img">
-                        </span>
-                    <!-- Img -->
+                    <span class="w-50 d-flex justify-content-center align-items-center">
+                        <div id="carouselExtra" class="carousel slide">
+                            <div class="carousel-inner">
+                                <!-- Questão 01 -->
+                                <div class="carousel-item active">
+                                    <div class="w-100 d-flex justify-content-center flex-column align-items-center">
+                                        <div style="max-height: 500px; overflow-y: auto; padding: 10px; width: 80%; color: var(--color-Secundaria);">
+                                            <!--Titulo-->
+                                                <span style="gap: 2.3rem;" class="d-flex">
+                                                    <span style="width: 8% !important;">
+                                                        <img src="./img/icons/ico5.png" alt="">
+                                                    </span>
+                                                    <div class="d-flex justify-content-end align-items-end">
+                                                        <h4 style="color: var(--color-Secundaria);">
+                                                            <span style="font-family: OpenSans-SemiBold; font-size: 1.3rem;">Teste de conceitos de resiliência e adaptabilidade</span>
+                                                        </h4>
+                                                    </div>
+                                                </span>
+                                            <!--Titulo-->
+                                            <br>
+                                            <!--Instruções-->
+                                                <span style="font-family: OpenSans-Light;">
+                                                    <p ><strong style="font-family: OpenSans-bold;">Instruções:</strong> Leia atentamente as perguntas para</p>
+                                                    <p>responder sobre os conceitos de resiliência e</p>
+                                                    <p>adaptabilidade. Você poderá escolher somente uma</p>
+                                                    <p>alternativa; em seguida, clique em “Confirmar”. Ao</p>
+                                                    <p>fazer, isso um botão de Feedback aparecerá na tela;</p>
+                                                    <p>clique nele para verificar a resposta correta</p>
+                                                </span>
+                                            <!--Instruções-->
+                                            <br>
+                                            <!--Pergunta-->
+                                                <span style="font-family: OpenSans-Light;">
+                                                    <p><strong style="font-family: OpenSans-bold;">1. Gerenciamento de estresse e pressão</p>
+                                                    <p>Pergunta:</strong> Como o gerenciamento de estresse contribui para a resiliência no trabalho?</p>
+                                                </span>
+                                            <!--Pergunta-->
+                                            <br>
+                                            <span>
+                                                <label><input type="checkbox" class="checkResposta10" data-correto="false"> a) Evitando todas as situações desafiadoras.</label>
+                                                <br>
+                                                <label><input type="checkbox" class="checkResposta10" data-correto="false"> b) Concentrando-se exclusivamente no resultado.</label>
+                                                <br>
+                                                <label><input type="checkbox" class="checkResposta10" data-correto="false"> c) Ignorando problemas até que desapareçam.</label>
+                                                <br>
+                                                <label><input type="checkbox" class="checkResposta10" data-correto="true"> d) Mantendo a calma e priorizando tarefas importantes.</label>
+                                            </span>
+                                            <br><br>
+                                            <span class="d-flex justify-content-center align-items-center">
+                                                <button id="botaoResposta10" style="display: none;" onclick="verificarResposta10()">Confirmar</button>
+                                            </span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- Questão 02 -->
+                                <div class="carousel-item">
+                                    <div class="w-100 d-flex justify-content-center flex-column align-items-center">
+                                        <div style="max-height: 500px; overflow-y: auto; padding: 10px; width: 78%; color: var(--color-Secundaria);">
+                                            <p><strong>2. Estratégias de Adaptação</strong></p>
+                                            <p>Pergunta: Como a flexibilidade no ambiente de trabalho ajuda na adaptação?</p>
+                                            <br>
+                                            <span>
+                                                <label><input type="checkbox" class="checkResposta10" data-correto="false"> a) Resistindo a qualquer mudança.</label>
+                                                <br>
+                                                <label><input type="checkbox" class="checkResposta10" data-correto="false"> b) Mantendo a mesma abordagem sempre.</label>
+                                                <br>
+                                                <label><input type="checkbox" class="checkResposta10" data-correto="true"> c) Ajustando-se a novas situações de forma proativa.</label>
+                                            </span>
+                                            <br><br>
+                                            <span class="d-flex justify-content-center align-items-center">
+                                                <button id="botaoResposta10" style="display: none;" onclick="verificarResposta10()">Confirmar</button>
+                                            </span>
+                                        </div>
+                                    </div>
+                                </div>
+            
+                                <!-- Slide com Imagem -->
+                                <div class="carousel-item">
+                                    <img src="extra3.jpg" class="d-block w-100" alt="Imagem Extra 3">
+                                    <div class="carousel-caption d-none d-md-block">
+                                        <h5>Slide Extra 3</h5>
+                                        <p>Descrição do terceiro slide extra.</p>
+                                    </div>
+                                </div>
+                            </div>
+            
+                            <button class="carousel-control-prev" id="Idsetas" type="button" data-bs-target="#carouselExtra" data-bs-slide="prev">
+                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Anterior</span>
+                            </button>
+                            <button class="carousel-control-next" id="Idsetas" type="button" data-bs-target="#carouselExtra" data-bs-slide="next">
+                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Próximo</span>
+                            </button>
+                        </div>
+                    </span>
+                    <!-- Imagem -->
+                    <span class="w-50">
+                        <img class="w-100" src="./img/QuartaImg.webp" alt="Primeira Img">
+                    </span>
                 </article>
             </section>
-        <!--Terceiro Carrosel Atividade--> 
+        <!--Quarta Carrosel Atividade03--> 
     </main>
 </body>
     <!--Js-->

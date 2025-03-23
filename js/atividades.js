@@ -37,8 +37,8 @@ function verificarResposta1() {
     if (selecionado) {
         let correto = selecionado.getAttribute("data-correto") === "true";
         Swal.fire({
-            title: correto ? "Parabéns!" : "Alternativa correta:",
-            text: correto ? "Você escolheu a resposta certa!" : "a) Flexibilidade, autocontrole emocional, tolerância ao estresse e coragem.",
+            title: correto ? "Parabéns! <br><br>" : "Alternativa correta: <br><br>",
+            html: correto ? "Você escolheu a resposta certa! <br><br>" : "a) Flexibilidade, autocontrole emocional, tolerância ao estresse e coragem. <br><br>",
             icon: correto ? "success" : "error"
         });
     } else {
@@ -63,8 +63,8 @@ function verificarResposta2() {
     if (selecionado) {
         let correto = selecionado.getAttribute("data-correto") === "true";
         Swal.fire({
-            title: correto ? "Parabéns!" : "Alternativa correta:",
-            text: correto ? "Você escolheu a resposta certa!" : "b) Adaptabilidade é ajustar-se rapidamente às mudanças, e resiliência é superar adversidades.",
+            title: correto ? "Parabéns! <br><br>" : "Alternativa correta: <br><br>",
+            html: correto ? "Você escolheu a resposta certa! <br><br>" : "b) Adaptabilidade é ajustar-se rapidamente às mudanças, e resiliência é superar adversidades. <br><br>",
             icon: correto ? "success" : "error"
         });
     } else {
@@ -89,8 +89,8 @@ function verificarResposta3() {
     if (selecionado) {
         let correto = selecionado.getAttribute("data-correto") === "true";
         Swal.fire({
-            title: correto ? "Parabéns!" : "Alternativa correta:",
-            text: correto ? "Você escolheu a resposta certa!" : "a) Buscar aprendizado com erros e construir uma rede de suporte confiável.",
+            title: correto ? "Parabéns! <br><br>" : "Alternativa correta: <br><br>",
+            html: correto ? "Você escolheu a resposta certa! <br><br>" : "a) Buscar aprendizado com erros e construir uma rede de suporte confiável. <br><br>",
             icon: correto ? "success" : "error"
         });
     } else {
@@ -101,3 +101,30 @@ function verificarResposta3() {
         });
     }
 }
+/*Atividade 02*/
+/*Questão01*/
+document.querySelectorAll(".checkResposta10").forEach(check => {
+    check.addEventListener("change", function() {
+        document.querySelectorAll(".checkResposta10").forEach(chk => chk !== this && (chk.checked = false));
+        document.getElementById("botaoResposta10").style.display = "block";
+    });
+});
+
+function verificarResposta10() {
+    let selecionado = document.querySelector(".checkResposta10:checked");
+    if (selecionado) {
+        let correto = selecionado.getAttribute("data-correto") === "true";
+        Swal.fire({
+            title: correto ? "Parabéns! <br><br>" : "Alternativa correta: <br><br>",
+            html: correto ? "Você escolheu a resposta certa! <br><br>" : "d) Mantendo a calma e priorizando tarefas importantes. <br><br> Feedback: O gerenciamento do estresse envolve manter a calma e priorizar tarefas, garantindo clareza e foco em situações desafiadoras.<br><br>",
+            icon: correto ? "success" : "error"
+        });
+    } else {
+        Swal.fire({
+            title: "Atenção!",
+            text: "Selecione uma opção primeiro!",
+            icon: "warning"
+        });
+    }
+}
+/*Questão01 */
