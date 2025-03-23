@@ -232,3 +232,55 @@ function verificarResposta14() {
     }
 }
 /*Questão05*/
+/*Questão06*/
+document.querySelectorAll(".checkResposta16").forEach(check => {
+    check.addEventListener("change", function() {
+        document.querySelectorAll(".checkResposta16").forEach(chk => chk !== this && (chk.checked = false));
+        document.getElementById("botaoResposta16").style.display = "block";
+    });
+});
+
+function verificarResposta16() {
+    let selecionado = document.querySelector(".checkResposta16:checked");
+    if (selecionado) {
+        let correto = selecionado.getAttribute("data-correto") === "true";
+        Swal.fire({
+            title: correto ? "Parabéns! <br><br>" : "Alternativa correta: <br><br>",
+            html: correto ? "Você escolheu a resposta certa! <br><br>" : "a) Oferecem apoio emocional e ajudam na superação de desafios. <br><br> Feedback: Redes de suporte fornecem apoio emocional e colaborativo, fortalecendo a capacidade de superar adversidades.<br><br>",
+            icon: correto ? "success" : "error"
+        });
+    } else {
+        Swal.fire({
+            title: "Atenção!",
+            text: "Selecione uma opção primeiro!",
+            icon: "warning"
+        });
+    }
+}
+/*Questão06*/
+/*Questão07*/
+document.querySelectorAll(".checkResposta17").forEach(check => {
+    check.addEventListener("change", function() {
+        document.querySelectorAll(".checkResposta17").forEach(chk => chk !== this && (chk.checked = false));
+        document.getElementById("botaoResposta17").style.display = "block";
+    });
+});
+
+function verificarResposta17() {
+    let selecionado = document.querySelector(".checkResposta17:checked");
+    if (selecionado) {
+        let correto = selecionado.getAttribute("data-correto") === "true";
+        Swal.fire({
+            title: correto ? "Parabéns! <br><br>" : "Alternativa correta: <br><br>",
+            html: correto ? "Você escolheu a resposta certa! <br><br>" : "b) Transparência e clareza na transmissão das informações <br><br> Feedback: Comunicação eficaz durante mudanças envolve clareza e transparência para manter o alinhamento.<br><br>",
+            icon: correto ? "success" : "error"
+        });
+    } else {
+        Swal.fire({
+            title: "Atenção!",
+            text: "Selecione uma opção primeiro!",
+            icon: "warning"
+        });
+    }
+}
+/*Questão07*/
