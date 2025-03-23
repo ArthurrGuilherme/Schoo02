@@ -205,4 +205,30 @@ function verificarResposta13() {
         });
     }
 }
-/*Questão03 */
+/*Questão04*/
+/*Questão05*/
+document.querySelectorAll(".checkResposta14").forEach(check => {
+    check.addEventListener("change", function() {
+        document.querySelectorAll(".checkResposta14").forEach(chk => chk !== this && (chk.checked = false));
+        document.getElementById("botaoResposta14").style.display = "block";
+    });
+});
+
+function verificarResposta14() {
+    let selecionado = document.querySelector(".checkResposta14:checked");
+    if (selecionado) {
+        let correto = selecionado.getAttribute("data-correto") === "true";
+        Swal.fire({
+            title: correto ? "Parabéns! <br><br>" : "Alternativa correta: <br><br>",
+            html: correto ? "Você escolheu a resposta certa! <br><br>" : "c) Analisar a situação antes de tomar decisões. <br><br> Feedback: Analisar a situação antes de reagir permite tomar decisões ponderadas, demonstrando autocontrole emocional.<br><br>",
+            icon: correto ? "success" : "error"
+        });
+    } else {
+        Swal.fire({
+            title: "Atenção!",
+            text: "Selecione uma opção primeiro!",
+            icon: "warning"
+        });
+    }
+}
+/*Questão05*/
