@@ -336,3 +336,29 @@ function verificarResposta19() {
     }
 }
 /*Questão09*/
+/*Questão10*/
+document.querySelectorAll(".checkResposta20").forEach(check => {
+    check.addEventListener("change", function() {
+        document.querySelectorAll(".checkResposta20").forEach(chk => chk !== this && (chk.checked = false));
+        document.getElementById("botaoResposta20").style.display = "block";
+    });
+});
+
+function verificarResposta20() {
+    let selecionado = document.querySelector(".checkResposta20:checked");
+    if (selecionado) {
+        let correto = selecionado.getAttribute("data-correto") === "true";
+        Swal.fire({
+            title: correto ? "Parabéns! <br><br>" : "Alternativa correta: <br><br>",
+            html: correto ? "Você escolheu a resposta certa! <br><br>" : "a) Garantem melhor desempenho em cenários dinâmicos e desafiadores. <br><br> Feedback: Resiliência e adaptabilidade ampliam o impacto das habilidades técnicas, tornando os profissionais mais eficazes em mudanças e desafios.<br><br> Feedback FINAL:Desenvolver resiliência e adaptabilidade é essencial para enfrentar desafios, mudanças e adversidades com equilíbrio emocional e mental, promovendo bem-estar e reduzindo o impacto do estresse. Essas competências fortalecem a autoconfiança e a capacidade de aprender continuamente, permitindo lidar com situações incertas e encontrar soluções criativas. No ambiente profissional, contribuem para maior desempenho, produtividade e liderança eficaz, ao passo que, na vida pessoal, facilitam a manutenção de relações saudáveis e a construção de uma mentalidade aberta e flexível, fundamental em um mundo em constante transformação.<br><br>",
+            icon: correto ? "success" : "error"
+        });
+    } else {
+        Swal.fire({
+            title: "Atenção!",
+            text: "Selecione uma opção primeiro!",
+            icon: "warning"
+        });
+    }
+}
+/*Questão09*/
