@@ -154,3 +154,29 @@ function verificarResposta11() {
     }
 }
 /*Questão02 */
+/*Questão03 */
+document.querySelectorAll(".checkResposta12").forEach(check => {
+    check.addEventListener("change", function() {
+        document.querySelectorAll(".checkResposta12").forEach(chk => chk !== this && (chk.checked = false));
+        document.getElementById("botaoResposta12").style.display = "block";
+    });
+});
+
+function verificarResposta12() {
+    let selecionado = document.querySelector(".checkResposta12:checked");
+    if (selecionado) {
+        let correto = selecionado.getAttribute("data-correto") === "true";
+        Swal.fire({
+            title: correto ? "Parabéns! <br><br>" : "Alternativa correta: <br><br>",
+            html: correto ? "Você escolheu a resposta certa! <br><br>" : "a) Ajuda a ver desafios como oportunidades de evolução. <br><br> Feedback: Aprender continuamente transforma desafios em oportunidades, fortalecendo a capacidade de lidar com mudanças e adversidades.<br><br>",
+            icon: correto ? "success" : "error"
+        });
+    } else {
+        Swal.fire({
+            title: "Atenção!",
+            text: "Selecione uma opção primeiro!",
+            icon: "warning"
+        });
+    }
+}
+/*Questão03 */
