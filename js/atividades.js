@@ -180,3 +180,29 @@ function verificarResposta12() {
     }
 }
 /*Questão03 */
+/*Questão04 */
+document.querySelectorAll(".checkResposta13").forEach(check => {
+    check.addEventListener("change", function() {
+        document.querySelectorAll(".checkResposta13").forEach(chk => chk !== this && (chk.checked = false));
+        document.getElementById("botaoResposta13").style.display = "block";
+    });
+});
+
+function verificarResposta13() {
+    let selecionado = document.querySelector(".checkResposta13:checked");
+    if (selecionado) {
+        let correto = selecionado.getAttribute("data-correto") === "true";
+        Swal.fire({
+            title: correto ? "Parabéns! <br><br>" : "Alternativa correta: <br><br>",
+            html: correto ? "Você escolheu a resposta certa! <br><br>" : "d) Ajustar-se às mudanças de forma positiva. <br><br> Feedback: Ser flexível significa se ajustar às mudanças, contribuindo para a produtividade e inovação.<br><br>",
+            icon: correto ? "success" : "error"
+        });
+    } else {
+        Swal.fire({
+            title: "Atenção!",
+            text: "Selecione uma opção primeiro!",
+            icon: "warning"
+        });
+    }
+}
+/*Questão03 */
