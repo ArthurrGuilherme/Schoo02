@@ -284,3 +284,55 @@ function verificarResposta17() {
     }
 }
 /*Questão07*/
+/*Questão08*/
+document.querySelectorAll(".checkResposta18").forEach(check => {
+    check.addEventListener("change", function() {
+        document.querySelectorAll(".checkResposta18").forEach(chk => chk !== this && (chk.checked = false));
+        document.getElementById("botaoResposta18").style.display = "block";
+    });
+});
+
+function verificarResposta18() {
+    let selecionado = document.querySelector(".checkResposta18:checked");
+    if (selecionado) {
+        let correto = selecionado.getAttribute("data-correto") === "true";
+        Swal.fire({
+            title: correto ? "Parabéns! <br><br>" : "Alternativa correta: <br><br>",
+            html: correto ? "Você escolheu a resposta certa! <br><br>" : "a) Promove perspectivas variadas para lidar com desafios. <br><br> Feedback: Diversidade oferece múltiplas perspectivas, promovendo soluções inovadoras e fortalecendo a resiliência da equipe.<br><br>",
+            icon: correto ? "success" : "error"
+        });
+    } else {
+        Swal.fire({
+            title: "Atenção!",
+            text: "Selecione uma opção primeiro!",
+            icon: "warning"
+        });
+    }
+}
+/*Questão08*/
+/*Questão09*/
+document.querySelectorAll(".checkResposta19").forEach(check => {
+    check.addEventListener("change", function() {
+        document.querySelectorAll(".checkResposta19").forEach(chk => chk !== this && (chk.checked = false));
+        document.getElementById("botaoResposta19").style.display = "block";
+    });
+});
+
+function verificarResposta19() {
+    let selecionado = document.querySelector(".checkResposta19:checked");
+    if (selecionado) {
+        let correto = selecionado.getAttribute("data-correto") === "true";
+        Swal.fire({
+            title: correto ? "Parabéns! <br><br>" : "Alternativa correta: <br><br>",
+            html: correto ? "Você escolheu a resposta certa! <br><br>" : "d) Facilita a busca por soluções criativas e eficazes. <br><br> Feedback: Adaptabilidade é essencial para encontrar soluções criativas e inovadoras em ambientes dinâmicos.<br><br>",
+            icon: correto ? "success" : "error"
+        });
+    } else {
+        Swal.fire({
+            title: "Atenção!",
+            text: "Selecione uma opção primeiro!",
+            icon: "warning"
+        });
+    }
+}
+/*Questão09*/
