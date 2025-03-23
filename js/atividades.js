@@ -128,3 +128,29 @@ function verificarResposta10() {
     }
 }
 /*Questão01 */
+/*Questão02 */
+document.querySelectorAll(".checkResposta11").forEach(check => {
+    check.addEventListener("change", function() {
+        document.querySelectorAll(".checkResposta11").forEach(chk => chk !== this && (chk.checked = false));
+        document.getElementById("botaoResposta11").style.display = "block";
+    });
+});
+
+function verificarResposta11() {
+    let selecionado = document.querySelector(".checkResposta11:checked");
+    if (selecionado) {
+        let correto = selecionado.getAttribute("data-correto") === "true";
+        Swal.fire({
+            title: correto ? "Parabéns! <br><br>" : "Alternativa correta: <br><br>",
+            html: correto ? "Você escolheu a resposta certa! <br><br>" : "a) Focam nas oportunidades criadas pelas mudanças. <br><br> Feedback: Pessoas adaptáveis enxergam mudanças como oportunidades para crescer e contribuir positivamente com a organização.<br><br>",
+            icon: correto ? "success" : "error"
+        });
+    } else {
+        Swal.fire({
+            title: "Atenção!",
+            text: "Selecione uma opção primeiro!",
+            icon: "warning"
+        });
+    }
+}
+/*Questão02 */
